@@ -1,0 +1,145 @@
+
+.banner-area{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(r.jpg);
+background-size: cover;
+}        
+
+.content-area{
+    height:100%;
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-style: unset;
+}
+
+.content{
+    text-align: center;
+}
+
+.content p{
+    align-items: center;
+    font-size:80px;
+    color:white;
+ 
+}
+#g{
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 10px;
+
+}
+
+.hoverable{
+display:inline-block;
+backface-visibility: hidden;
+vertical-align: middle;
+position:relative;
+box-shadow: 0 0 1px rgba(0,0,0,0);
+tranform: translateZ(0);
+transition-duration: 1s;
+transition-property:transform;
+}
+
+.hoverable:after{
+position:absolute;
+pointer-events: none;
+z-index:-1;
+content: '';
+top: 100%;
+left: 5%;
+height:10px;
+width:90%;
+opacity:0;
+background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+/* W3C */
+transition-duration: 0.3s;
+transition-property: transform, opacity;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+transform: translateY(+55px);
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+opacity: 100;
+transform: translateY(-5px);
+}
+
+
+ul{
+background-color: rgb(24, 15, 3);
+}
+
+
+li {
+
+padding-left: 100px;
+display: inline;
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-left: 3em;
+margin-right: 3em;
+
+}
+h3{
+    font-size: 80px;
+}
+p{
+    font-size: 50px;
+}
+.r{
+    padding: 100px;
+}
+.f{
+    padding-right: 20px;
+  
+      
+}
+.k{
+    background-size: cover;
+    background-image: linear-gradient(rgb(250, 244, 244),rgb(252, 246, 246)),url(UU.jpg);
+}
+
+
+  #hh {
+    
+    float: left;
+
+  }
+  #jj
+  {
+
+      font-size: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      color:black;
+
+  }
+  #uu
+ {
+     background-image:linear-gradient(rgba(255, 255, 255, 0.897), rgba(201, 195, 195, 0.452)), url(w.jpg);
+     backface-visibility: unset;
+ } 
+ #up
+ {
+     background-image:linear-gradient(rgb(255, 255, 255), rgba(8, 8, 8, 0.425)), url(w.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     backface-visibility: unset;
+ } 
+.btn
+{
+
+        background-color: #f1f5f1;
+        border: black;
+        color: rgb(12, 12, 12);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+}
